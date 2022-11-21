@@ -1,0 +1,79 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Ronaldo",
+      "country": "NYC, US",
+      "reviewTxt": "I like the features they provide",
+      "rating": 4.1
+    },
+    {
+      "id": 2,
+      "name": "Rakesh",
+      "country": "Bengaluru, IN",
+      "reviewTxt": "I like it because I can connect with high speeds even when I travel far",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "name": "David",
+      "country": "Canberra, AU",
+      "reviewTxt": "Wow... I am very happy with this VPN. It turned out to be more than my expectations and so far there have been no problems. LaslesVPN is the best",
+      "rating": 4.5
+    },
+    {
+      "id": 4,
+      "name": "Messi",
+      "country": "Abu Dhabhi",
+      "reviewTxt": "Great product to have for my business that currently requires a virtual private network that has high security",
+      "rating": 4.2
+    },
+    {
+      "name": "Suraj",
+      "country": "Singapore",
+      "reviewTxt": "Great! It turned out to be more than my expectations and so far there have been no problems ",
+      "rating": "4",
+      "id": 5
+    },
+    {
+      "name": "admin",
+      "country": "blore",
+      "reviewTxt": "admin review",
+      "rating": "5",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "fullName": "Rajesh",
+      "email": "rajesh@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "fullName": "test",
+      "email": "test@gmail.com",
+      "password": "pass123456",
+      "id": 3
+    },
+    {
+      "fullName": "",
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "fullName": "subhash",
+      "email": "subhash@gmail.com",
+      "password": "123",
+      "id": 5
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "pass123456"
+    }
+  ]
+}

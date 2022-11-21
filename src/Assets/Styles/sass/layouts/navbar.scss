@@ -1,0 +1,131 @@
+@import "../main.scss";
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  margin: auto;
+  .wrapper {
+    width: 88%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+      align-items: baseline;
+    }
+  }
+  .nav-bar-logo {
+    width: 15%;
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 1100px) {
+      width: 50%;
+    }
+    img {
+      max-width: 8rem;
+      width: 100%;
+    }
+    a {
+      width: 100%;
+    }
+  }
+
+  #checked {
+    display: none;
+    background-color: none;
+    opacity: 0;
+    @media screen and (max-width: 1100px) {
+      display: flex;
+    }
+  }
+  .nav-btn img {
+    display: none;
+    @media screen and (max-width: 1100px) {
+      display: flex;
+      position: absolute;
+      right: 1rem;
+      width: 1.5rem;
+      top: 2rem;
+      height: 1.5rem;
+    }
+  }
+  .show {
+    display: flex !important;
+  }
+  .hide {
+    display: none !important;
+  }
+  .nav-wrapper {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.4s;
+    @media screen and (max-width: 1100px) {
+      display: none;
+      flex-direction: column;
+      align-items: start;
+      justify-content: baseline;
+      padding: 1rem;
+      border-radius: 2px;
+      border: 0.1px solid rgba(128, 128, 128, 0.249);
+    }
+
+    .header-links {
+      width: 60%;
+
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        @media screen and (max-width: 1100px) {
+          flex-direction: column;
+          padding-left: 0;
+        }
+        li {
+          a {
+            color: $fontColor1;
+            font-weight: 300;
+            font-size: 1rem;
+          }
+
+          @media screen and (max-width: 1100px) {
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
+    }
+    .authOptions {
+      width: 30%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .auth-links {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        @media screen and (max-width: 1100px) {
+          padding-left: 0;
+          width: 10rem;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .signin {
+          color: $fontColor2;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

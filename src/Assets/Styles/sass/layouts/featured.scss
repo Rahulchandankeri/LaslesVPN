@@ -1,0 +1,113 @@
+@import "../main.scss";
+
+.featured-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  .wrapper {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    flex-direction: column;
+
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+    }
+    .content-wrap {
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        width: 90%;
+      }
+    }
+    .caption {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: 1100px) {
+        align-items: center;
+        margin: auto;
+        width: 90%;
+      }
+      .main-caption {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 1.8rem;
+      }
+      .secondary-caption {
+        font-size: $fs2;
+        font-weight: 300;
+        margin-bottom: 4rem;
+      }
+    }
+    .illustration-wrapper {
+      display: flex;
+      justify-content: end;
+      width: 50%;
+      height: 20rem;
+      @media screen and (max-width: 1100px) {
+        width: 90%;
+        justify-content: flex-start;
+        margin: 1.5rem auto;
+      }
+      img {
+        width: 75%;
+      }
+    }
+  }
+
+  .mini-cards {
+    width: 80%;
+    display: flex;
+    margin: 5.5rem auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4rem 5vw 4rem 5vw;
+    box-shadow: 0px 20px 114px rgba(11, 19, 42, 0.08);
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      width: 90%;
+      margin: 2rem auto;
+      align-items: center;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      width: 20%;
+      min-width: 15rem;
+      justify-content: space-evenly;
+      border-right: 1px solid #c1c1c1bc;
+      @media screen and (max-width: 1100px) {
+        width: 50%;
+        margin-bottom: 1.5rem;
+        max-width: 15rem;
+      }
+      img {
+        width: 2rem;
+        height: 2rem;
+        background-color: #ffecec;
+        border-radius: 50%;
+        padding: 0.5rem;
+      }
+      .txt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 5rem;
+        text-align: left;
+      }
+      .imp-caption {
+        font-weight: 700;
+        font-size: 1.4rem;
+      }
+      .lt-caption {
+        font-weight: 300;
+        color: $fontColor1;
+      }
+    }
+  }
+}

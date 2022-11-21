@@ -1,0 +1,70 @@
+@import "../main.scss";
+
+.features-wrapper {
+  display: flex;
+  margin: 1.5rem auto;
+
+  .wrappper {
+    display: flex;
+    margin: auto;
+    width: 90%;
+
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+    }
+    .illustation {
+      width: 60%;
+      display: flex;
+
+      @media screen and (max-width: 1100px) {
+        width: 90%;
+      }
+      img {
+        width: 75%;
+        margin: 0 auto;
+        height: 70%;
+      }
+    }
+    .captions {
+      width: 40%;
+      @media screen and (max-width: 1100px) {
+        width: 90%;
+        margin: 1.5rem auto;
+      }
+      .wrapper {
+        flex-direction: column;
+        @media screen and (max-width: 1100px) {
+          width: 80%;
+          margin: auto;
+        }
+      }
+      .main-caption {
+        font-size: $fs1;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      .lt-caption {
+        font-weight: 300;
+        font-size: $fs2;
+        color: $fontColor1;
+        margin-bottom: 1rem;
+      }
+    }
+    .inline-caption {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 0.8rem;
+      img {
+        margin-right: 1rem;
+        width: 1rem;
+        height: 1rem;
+      }
+      p {
+        font-weight: 300;
+        font-size: 0.95rem;
+        color: $fontColor1;
+      }
+    }
+  }
+}
